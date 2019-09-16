@@ -122,7 +122,7 @@
                         <label>End</label>
                         <input autocomplete=off class="tail-time">
                     </div>
-                    <input class=manual_activity placeholder=activity>
+                    <input autocomplete=off class=manual_activity placeholder=activity>
                     <div class=manual_time></div>
                     <div class=mybutton id=manual_add>Add</div>
                 </div>
