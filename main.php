@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +31,6 @@
 <script>
     $(function(){
         <?php
-            session_start();
             ini_set('session.gc_maxlifetime', 360000);
             if(isset($_COOKIE["session"]) && !isset($_SESSION["email"]))
                 echo 'login('.$_COOKIE["session"].')';
