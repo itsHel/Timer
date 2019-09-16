@@ -65,6 +65,7 @@
             <li class="suggestions menu_items">
                 <img title="suggestions" src="source/imgs/suggestion.png">
                 <div>
+                    <p>Your Suggestion<p>
                     <textarea class=suggestion_text></textarea>
                     <div id=send_suggestion class=mybutton>Send</div>
                     <div class=suggestion_confirm></div>
