@@ -31,7 +31,6 @@
     } else die("3");
 
     if($stmt->rowCount() == 1){
-        echo "ok";
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         if(isset($row["email"]))                    
             $_GET["email"] = $row["email"];
@@ -46,6 +45,7 @@
         $key = uniqid("", true);             // bin2hex(random_bytes(30));
         $session = hash("sha256", $_GET["email"]);
         setcookie("session", $session . ";" . $key);
+        echo "ok";
         $cmd = "UPDATE users SET session = :session WHERE email = :email";
         try{
             $stmt = $db->prepare($cmd);
