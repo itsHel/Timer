@@ -2,12 +2,12 @@
     session_start();
     try{
         $db = new PDO('mysql:host=127.0.0.1; dbname=time; charset=utf8mb4',"root","", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-    } catch(PDOException $ex) {
+    } catch(PDOException $ex){
         die("no connection");
     }
 
     function error_save($my_error){
-        file_put_contents("error/error_log.txt", $my_error ."\r\n\r\n", FILE_APPEND);
+        file_put_contents("php/error/error_log.txt", $my_error ."\r\n\r\n", FILE_APPEND);
     }
   
     function create_tables(){
@@ -24,7 +24,7 @@
                  PRIMARY KEY (id)
                 ) ENGINE=MyISAM AUTO_INCREMENT=248 DEFAULT CHARSET=latin1';
             $db->exec($cmd);
-        } catch(PDOException $ex) {
+        } catch(PDOException $ex){
             echo $ex->getMessage();
         }
         try{
@@ -40,13 +40,13 @@
                      PRIMARY KEY (id)
                     ) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;';
             $db->exec($cmd);
-        } catch(PDOException $ex) {
+        } catch(PDOException $ex){
             echo $ex->getMessage();
         }
         try{
-            $cmd = "INSERT into users values (null, test, ce85b99cc46752fffee35cab9a7b0278abb4c2d2055cff685af4912c49490f8d, NOW(), 1, false, null)";
+            $cmd = "INSERT into users values (null, 'test', 'ce85b99cc46752fffee35cab9a7b0278abb4c2d2055cff685af4912c49490f8d', NOW(), 1, false, null)";
             $db->exec($cmd);
-        } catch(PDOException $ex) {
+        } catch(PDOException $ex){
             echo $ex->getMessage();
         }
     }
