@@ -91,7 +91,9 @@
     </nav>
    
     <main>
-        <div class=full>    
+        <div class=full>   
+            <input style="display:none" type="text" name="fakeusernameremembered"/>
+            <input style="display:none" type="password" name="fakepasswordremembered"/> 
             <div class=panels>
                 <img src="source/imgs/plus.png" title="Add New Panel" id=new_panel_button>
             </div>
