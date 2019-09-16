@@ -38,6 +38,7 @@
         //exit if user dont want keep in
         if($_GET["keep_in"] == "false"){
             $db = null;
+            echo "ok";
             exit();
         }
         //else
