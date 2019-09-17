@@ -1036,6 +1036,9 @@ function setPanelButtons(index){
                     suggestions = [];
                 response(suggestions);
             });
+        },
+        select: function(event, ui){
+            myVars.watches[index].activity = ui.item;
         }
     });
     $(".panel#"+index+" .input_wrap input").on("keydown", function(e){
