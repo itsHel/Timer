@@ -160,28 +160,28 @@
         <div class=auth>
             <div class=login_wrapper>
                 <div>
-                <div class=login_select>
-                    <div>Login</div>
-                    <div class=login_select_inactive>Register</div>
-                </div>
-                <div class=login>
-                    <div id=login_error></div>
-                    <input id=email placeholder=email>
-                    <input id=pass type=password placeholder=password>
-                    <input class=keep_in type="checkbox" checked><label>Keep in</label>
-                    <div class=mybutton id=login>Login</div>
-                    <div class=mybutton id=skip_login>Skip Login</div>
-                </div>
-                <div class="register hide">
-                    <div id=reg_email_error></div>
-                    <input id=reg_email placeholder=email>
-                    <div id=reg_pass_error></div>
-                    <input type=password id=reg_pass placeholder=password>
-                    <div id=reg_pass2_error></div>
-                    <input type=password id=reg_pass2 placeholder="repeat password">
-                    <input class=keep_in type="checkbox" checked><label>Keep in</label>
-                    <div class=mybutton id=register>Register</div>
-                </div>
+					<div class=login_select>
+						<div>Login</div>
+						<div class=login_select_inactive>Register</div>
+					</div>
+					<div class=login>
+						<div id=login_error></div>
+						<input id=email placeholder=email>
+						<input id=pass type=password placeholder=password>
+						<input class=keep_in type="checkbox" checked><label>Keep in</label>
+						<div class=mybutton id=login>Login</div>
+						<div class=mybutton id=skip_login>Skip Login</div>
+					</div>
+					<div class="register hide">
+						<div id=reg_email_error></div>
+						<input id=reg_email placeholder=email>
+						<div id=reg_pass_error></div>
+						<input type=password id=reg_pass placeholder=password>
+						<div id=reg_pass2_error></div>
+						<input type=password id=reg_pass2 placeholder="repeat password">
+						<input class=keep_in type="checkbox" checked><label>Keep in</label>
+						<div class=mybutton id=register>Register</div>
+					</div>
                 </div>    
             </div>
         </div>
